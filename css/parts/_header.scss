@@ -1,0 +1,168 @@
+.header {
+    &__top {
+        padding: 16px 0;
+        @include dfcc;
+
+        &-list {
+            @include dfcc;
+            @include ls;
+        }
+
+        &-left {
+            width: 40%;
+        }
+
+        &-right {
+            width: 20%;
+        }
+
+        &-link {
+            font-family: OpenSans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            color: $accent;
+            @include td;
+        }
+
+        &-line {
+            opacity: 0.05;
+            border: 1px solid #151515;
+            margin: 0;
+        }
+    }
+    &__contact {
+        color: $dark;
+    }
+
+    &__hero {
+        padding: 40px 0 48px 0;
+        @include dfcc;
+
+        &-select {
+            width: 100%;
+            max-width: 130px;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 22px;
+            color: $dark;
+            position: relative;
+            display: inline-block;
+            appearance: none;
+            background: url(../img/ic-down.png) no-repeat right;
+        }
+
+        &-line {
+            color: #A9A9A9;
+        }
+
+        &-input {
+            width: 100%;
+            max-width: 500px;
+            background: #F9F9F9;
+            border: 1px solid #D1D1D1;
+            box-sizing: border-box;
+            border-radius: 12px;
+            padding: 13px 16px;
+            @include dfcc;
+        }
+
+        &-cart {
+            width: 7%;
+            @include dfcc;
+        }
+
+        &-before {
+            position: relative;
+
+            &:before {
+                content: "4";
+                position: absolute;
+                font-size: 10px;
+                line-height: 18px;
+                color: white;
+                left: -6px;
+                top: 12px;
+                width: 16px;
+                height: 16px;
+                background-color: $secondary-accent;
+                border-radius: 50%;
+                text-align: center;
+            }
+        }
+
+    }
+
+    &__select {
+        @include dfcc;
+        
+    }
+    &__input {
+        border: none;
+        background: none;
+        width: 50%;
+        font-family: OpenSans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        outline:none;
+        color: #A9A9A9;
+    }
+
+    &__menu {
+        background: #faf7f7;
+        &-list {
+            padding: 0 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &-item {
+            position: relative;
+            list-style: none;
+
+            &:hover ul {
+                display: block;
+                transition: 1s;
+            }
+        }
+        &-arrow {
+            margin-left: 5px;
+        }
+        &-link {
+            text-decoration: none;
+            display: block;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 22px;
+            color: $dark;
+            padding: 16px 0;
+
+            &:hover .header__menu-arrow {
+                transform: rotate(180deg);
+                transition: 0.8s ease-out;
+            }
+        }
+        &-sublink {
+            padding-left: 5px;
+            text-decoration: none;
+            color: $dark;
+
+            &:hover {
+                color: lighten($dark, 30%);
+            }
+        }
+        &-sublist {
+            position: absolute;
+            left: 0;
+            top: 100%;
+            display: none;
+            padding: 0;
+        }
+    }
+}
