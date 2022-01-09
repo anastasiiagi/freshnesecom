@@ -4,6 +4,12 @@
     justify-content: space-between;
 }
 
+@mixin dffc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 @mixin ls {
     list-style: none;
     padding: 0;

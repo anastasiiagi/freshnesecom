@@ -80,6 +80,14 @@ a.button {
   justify-content: space-between;
 }
 
+@media (max-width: 525px) {
+  .header__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .header__top-list {
   display: flex;
   align-items: center;
@@ -89,12 +97,12 @@ a.button {
   margin: 0;
 }
 
-.header__top-left {
-  width: 40%;
-}
-
-.header__top-right {
-  width: 20%;
+@media (max-width: 400px) {
+  .header__top-list-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .header__top-link {
@@ -105,6 +113,7 @@ a.button {
   line-height: 16px;
   color: #6A983C;
   text-decoration: none;
+  margin-right: 15px;
 }
 
 .header__top-line {
@@ -122,6 +131,22 @@ a.button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media (max-width: 525px) {
+  .header__hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0 30px 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .header__hero-logo {
+    padding-right: 15px;
+    width: 100%;
+  }
 }
 
 .header__hero-select {
@@ -161,6 +186,26 @@ a.button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .header__hero-cart {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 525px) {
+  .header__hero-cart {
+    margin-top: 15px;
+    margin-left: 0;
+    width: 15%;
+  }
+}
+
+@media (max-width: 400px) {
+  .header__hero-cart {
+    width: 20%;
+  }
 }
 
 .header__hero-before {
@@ -211,6 +256,21 @@ a.button {
   justify-content: space-between;
 }
 
+@media (max-width: 960px) {
+  .header__menu-list {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .header__menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .header__menu-item {
   position: relative;
   list-style: none;
@@ -219,6 +279,18 @@ a.button {
 .header__menu-item:hover ul {
   display: block;
   transition: 1s;
+}
+
+@media (max-width: 960px) {
+  .header__menu-item {
+    width: 25%;
+  }
+}
+
+@media (max-width: 700px) {
+  .header__menu-item {
+    width: 50%;
+  }
 }
 
 .header__menu-arrow {
@@ -235,11 +307,18 @@ a.button {
   line-height: 22px;
   color: #151515;
   padding: 16px 0;
+  white-space: nowrap;
 }
 
 .header__menu-link:hover .header__menu-arrow {
   transform: rotate(180deg);
   transition: 0.8s ease-out;
+}
+
+@media (max-width: 700px) {
+  .header__menu-link {
+    padding: 5px 0;
+  }
 }
 
 .header__menu-sublink {
@@ -258,5 +337,7 @@ a.button {
   top: 100%;
   display: none;
   padding: 0;
+  z-index: 1;
+  background: #faf7f7;
 }
 /*# sourceMappingURL=style.css.map */
