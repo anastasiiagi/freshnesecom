@@ -622,7 +622,7 @@ a.button {
 }
 
 .slider__card::after {
-  content: url(/img/human.png);
+  content: url(../img/human.png);
   position: absolute;
   bottom: -31px;
   left: 40%;
