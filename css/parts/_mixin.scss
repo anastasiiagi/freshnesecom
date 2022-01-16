@@ -4,6 +4,12 @@
     justify-content: space-between;
 }
 
+@mixin fcc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @mixin dffc {
     display: flex;
     flex-direction: column;

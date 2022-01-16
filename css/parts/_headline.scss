@@ -1,0 +1,25 @@
+.headline{
+    padding: 64px 0;
+    &__top {
+        @include dfcc;
+        margin-bottom: 37px;
+    }
+    &__title {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: $dark;
+        margin: 0;
+    }
+    &__products {
+        @include dfcc;
+    }
+    &__card {
+        margin-right: 32px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

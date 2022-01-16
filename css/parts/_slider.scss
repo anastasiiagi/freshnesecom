@@ -1,0 +1,88 @@
+.slider {
+    &__top {
+        @include dfcc;
+        margin-bottom: 32px;
+    }
+
+    &__title {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: $dark;
+        margin: 0;
+    }
+
+    &__wrap {
+        @include dfcc;
+        text-align: center;
+    }
+
+    &__container {
+        padding: 0;
+    }
+
+    &__card {
+        background: #FFFFFF;
+        border: 1px solid #F1F1F1;
+        box-sizing: border-box;
+        position: relative;
+        border-radius: 12px;
+        padding: 24px 32px 40px 32px;
+        text-align: center;
+        &::after {
+            content: url(/img/human.png);
+            position: absolute;
+            bottom: -31px;
+            left: 40%;
+        }
+
+        &-text {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 22px;
+            color: $dark;
+            margin-top: 0;
+            margin-bottom: 24px;
+        }
+
+        &-name {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            color: #A9A9A9;
+        }
+    }
+}
+
+.swiper-wrapper {
+    padding: 33px 0 64px 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background: #151515;
+    border-radius: 0 12px 12px 0;
+    fill: black !important;
+    stroke: black !important;
+
+    &::after {
+        display: none;
+    }
+}
+.swiper-button-prev {
+    background-image: url("../img/Layer.png") !important;
+    
+}
+
+.swiper-button-next {
+    background-image: url("../img/arrow-white-right.png") !important;
+}

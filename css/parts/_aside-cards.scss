@@ -1,0 +1,175 @@
+.aside-cards{
+    &__container{
+        display: grid;
+        grid-template-columns: 270px 1fr;
+        grid-gap: 0 30px;
+    }
+}
+
+.aside {
+    &__nav {
+        margin-bottom: 150px;
+        &:last-child {
+            margin-bottom: 150px;
+        }
+    }
+    &__title {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: $dark;
+        display: inline-block;
+        margin-bottom: 14px;
+    }
+
+    &__menu {
+        list-style: none;
+        margin-bottom: 48px;
+    }
+
+    &__item {
+        margin-bottom: 12px;
+        &:last-child {
+            margin-bottom: 12px;
+        }
+    }
+
+    &__link {
+        font-family: OpenSans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: $accent;
+    }
+}
+
+.cards {
+    &__banners {
+        @include dfcc;
+        margin-bottom: 130px;
+        &-wrap {
+            background: url(../img/fone-banner.png);
+            padding: 48px 181px 32px 34px;
+            border-radius: 25px;
+        }
+        &-subtitle {
+            margin-top: 0;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            color: $accent;
+            margin-bottom: 8px;
+        }
+        &-title {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 33px;
+            color: $dark;
+            margin-top: 0;
+            margin-bottom: 94px;
+        }
+    }
+    &__product {
+        @include dfcc;
+        align-items: flex-start;
+
+        &-top {
+            margin-bottom: 128px;
+        }
+
+        &-wrappimg{
+            position: relative;
+            padding: 0 0 77% 0;
+        }
+        &-img {
+            max-width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            position:absolute;
+            top: 0;
+            left: 0;
+        }
+        &-info {
+            background: #FFFFFF;
+            border: 1px solid #D1D1D1;
+            box-sizing: border-box;
+            border-radius: 12px;
+            padding: 16px;
+            width: 30%;
+        }
+        &-title {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 22px;
+            margin-top: 16px;
+            margin-bottom: 4px;
+            color: #151515;
+        }
+        &-text{
+            margin-top: 0;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            margin-bottom: 16px;
+            color: #575757;
+        }
+        &-buy {
+            @include dfcc;
+            align-items: flex-start;
+        }
+        &-price {
+            display: flex;
+            flex-direction: column;
+            &-new {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 27px;
+                color: #151515;
+            }
+            &-old {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 18px;
+                text-decoration-line: line-through;
+                color: #A9A9A9;
+            }
+        }
+    }
+}
+
+.sell-card {
+    position: relative;
+    &::before {
+        content: "- 36 %";
+        position: absolute;
+        left: 30px;
+        z-index: 1;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: #6a983c;
+        align-items: center;
+        padding: 0px 8px;
+        background: #f4f8ec;
+        border-radius: 12px;
+        top: 20px;
+    }
+}

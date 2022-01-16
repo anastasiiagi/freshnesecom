@@ -1,6 +1,11 @@
 @import url("normalize.min.css");
+@import "parts/mixin";
 @import "parts/vars";
 @import "parts/basic";
 @import "parts/buttons";
-@import "parts/mixin";
 @import "parts/header";
+@import "parts/aside-cards";
+@import "parts/slider";
+@import "parts/posts";
+@import "parts/footer";
+@import "parts/headline";

@@ -1,0 +1,125 @@
+.posts {
+    padding: 64px 0;
+    &__top {
+        @include dfcc;
+        margin-bottom: 34px;
+    }
+
+    &__title {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: $dark;
+        margin: 0;
+    }
+
+    &__wrap {
+        @include dfcc;
+        align-items: flex-start;
+        &-left {
+            background: url(../img/posts-img.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            padding: 24px 34px 24px 24px;
+            border-radius: 15px;
+            &-category {
+                background: #F4F8EC;
+                border-radius: 12px;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 18px;
+                color: $accent;
+                padding: 0 8px;
+            }
+
+            &-title {
+                margin-top: 228px;
+                margin-bottom: 8px;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 33px;
+                color: #FFFFFF;
+            }
+        }
+        &-author {
+            display: flex;
+            align-items: center;
+        }
+        &-name {
+            font-family: OpenSans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            color: $dark;
+            margin-right: 16px;
+        }
+        &-data {
+            font-family: OpenSans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            color: $dark;
+        }
+        &-span-white {
+            color: #FFFFFF;
+            margin-left: 8px;
+        }
+
+        &-center {
+            &-category {
+                margin-top: 24px;
+                margin-bottom: 8px;
+                background: #eff6dd;
+                border-radius: 12px;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 18px;
+                color: $accent;
+                padding: 0 8px;
+                max-width: 80px;
+            }
+            &-title {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 27px;
+                color: $dark;
+                margin-top: 0;
+                margin-bottom: 16px;
+            }
+        }
+
+        &-card {
+            @include dfcc;
+            margin-bottom: 32px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &-content {
+                margin-right: 24px;
+            }
+            &-title {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 22px;
+                color: $dark;
+                margin-top: 9.5px;
+                margin-bottom: 16px;
+            }
+        }
+    }
+}

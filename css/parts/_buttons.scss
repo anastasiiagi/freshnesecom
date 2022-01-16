@@ -1,7 +1,9 @@
 button, .button, input[type="submit"] {
     display: inline-block;
+    @include fcc;
     cursor: pointer;
     font-weight: 700;
+    border: 0;
 }
 
 a.button {
@@ -25,12 +27,49 @@ a.button {
         padding: 16px 48px;
     }
 
+    &--aside {
+        background: #F5F5F5;
+        border-radius: 12px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 22px;
+        color: $dark;
+    }
+
+    &--banner {
+        background: none;
+        border: 2px solid #92C064;
+        box-sizing: border-box;
+        border-radius: 12px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 22px;
+        color: $dark;
+    }
+
+    &--buy{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 22px;
+        padding: 6.5px 12px;
+        color: #FFFFFF;
+        border-radius: 12px;
+    }
+
     &--s {
         padding: 12px 16px;
     }
 
     &--xs {
         padding: 7px 12px;
+        background: #FFFFFF;
+        border-radius: 12px;
     }
 
     
