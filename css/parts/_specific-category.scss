@@ -1,0 +1,135 @@
+.specific-category {
+    &__container {
+        display: grid;
+        grid-template-columns: 268px 1fr;
+        grid-gap: 0 32px;
+    }
+    &__aside{
+        &-item {
+            @include dfcc;
+        }
+        &-link {
+            color: $dark;
+            text-decoration: none;
+        }
+    }
+    &__nav {
+        margin-bottom: 0;
+    }
+}
+
+.products{
+    &__list {
+        padding-top: 64px;
+    }
+    &__item {
+        @include dfcc;
+        border: 1px solid #D1D1D1;
+        box-sizing: border-box;
+        border-radius: 12px;
+        width: 100%;
+        max-width: 869px;
+        padding-right: 32px;
+        margin-bottom: 32px;
+        list-style: none;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__foto {
+        max-width: 268px;
+        width: 100%;
+        height: 277px;
+        border-radius: 12px 0 0 12px;
+    }
+
+    &__title {
+        margin-top: 32px;
+        margin-bottom: 8px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: $dark;
+    }
+    
+    &__text {
+        margin-top: 0;
+        margin-bottom: 8px;
+        font-family: OpenSans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: #575757;
+    }
+
+    &__rating {
+        margin-bottom: 24px;
+    }
+
+    &__data {
+        margin-bottom: 36px;
+        list-style: none;
+        @include dfcc;
+        &-list {
+            margin-right: 32px;
+        }
+        &-item {
+            &-activ {
+                color: $accent;
+            }
+        }
+    }
+
+    &__delivery {
+        margin-top: 16px;
+        margin-bottom: 26px;
+        font-family: OpenSans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: #A9A9A9;
+    }
+    
+    &__like {
+        background: #F5F5F5;
+        border-radius: 12px;
+        padding: 7px 12px;
+        margin-top: 12px;
+        &:hover .products__like-heart {
+            content: url(../img/heart-activ.png);
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
+        }
+        &-heart {
+            margin-right: 6px;
+        }
+    }
+
+    &__save {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 22px;
+        color: $dark;
+    }
+    
+}
+
+.cards__product-top-grid {
+    margin-bottom: 24px;
+}
+
+.range-slider {
+    position: relative;
+    height: 80px;
+}
+
+.arrow {
+    margin-left: 7px;
+}

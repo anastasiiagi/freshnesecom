@@ -1,0 +1,22 @@
+.breadcrumb {
+    display: flex;
+    &-item {
+        list-style: none;
+        font-family: OpenSans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: $dark;
+    }
+
+    &-link {
+        text-decoration: none;
+        color: #A9A9A9;
+    }
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}

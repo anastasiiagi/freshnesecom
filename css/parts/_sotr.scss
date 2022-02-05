@@ -1,0 +1,92 @@
+.sort {
+    &__title {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 48px;
+        color: $dark;
+        margin: 0;
+    }
+    &__top{
+        @include dfcc;
+        padding: 8px 0;
+        &-list {
+            @include dfcc;
+            width: 278px;
+        }
+        &-item {
+            list-style: none;
+        }
+        &-link {
+            text-decoration: none;
+            font-family: OpenSans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            color: #A9A9A9;
+            @include dfcc;
+            &-active {
+                color: $dark;
+            }
+        }
+        &-link img {
+            margin-right: 4px;
+        }
+        &-link span {
+            margin-right: 4px;
+        }
+    }
+    &__hero {
+        padding: 16px 0;
+        width: 100%;
+        max-width: 821px;
+        @include dfcc;
+        &-check {
+            background: #F9F9F9;
+            border: 1px solid #D1D1D1;
+            box-sizing: border-box;
+            border-radius: 12px;
+            padding: 9px 16px;
+            @include dfcc;
+            &-span {
+                border: 1px solid #EBEBEB;
+                box-sizing: border-box;
+                border-radius: 12px;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 18px;
+                color: $dark;
+                padding: 0 8px;
+            }
+            &-line {
+                color: #D1D1D1;
+                margin: 0 24px;
+            }
+            &-select {
+                background: #F9F9F9;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 18px;
+                color: $dark;
+            }
+        }
+        &-label {
+            font-family: OpenSans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            color: $dark;
+            margin: 0 8px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

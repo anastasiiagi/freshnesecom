@@ -5,11 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eCommerce</title>
+    <title>Fruit and vegetables</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins:regula,500,600,700" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:regular,600" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -56,7 +61,7 @@
             </div>
         </div>
         <div class="header__menu ">
-            <div class="container ">
+            <div class="container">
                 <ul class="header__menu-list">
                     <li class="header__menu-item"><a href="#" class="header__menu-link">Bakery <img
                                 src="img/ic-chevron-down.png" alt="arrow" class="header__menu-arrow"></a>
@@ -68,7 +73,7 @@
                             <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
                         </ul>
                     </li>
-                    <li class="header__menu-item"><a href="indexList.html" class="header__menu-link">Fruit and
+                    <li class="header__menu-item"><a href="indexGrid.html" class="header__menu-link">Fruit and
                             vegetables<img src="img/ic-chevron-down.png" alt="arrow" class="header__menu-arrow"></a>
 
                         <ul class="header__menu-sublist">
@@ -100,7 +105,7 @@
                     <li class="header__menu-item"><a href="#" class="header__menu-link">Kitchen<img
                                 src="img/ic-chevron-down.png" alt="arrow" class="header__menu-arrow"></a>
                         <ul class="header__menu-sublist">
-                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example </a></li>
                             <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
                             <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
                             <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
@@ -109,7 +114,7 @@
                     <li class="header__menu-item"><a href="#" class="header__menu-link">Special nutrition<img
                                 src="img/ic-chevron-down.png" alt="arrow" class="header__menu-arrow"></a>
                         <ul class="header__menu-sublist">
-                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example </a></li>
                             <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
                             <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
                             <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
@@ -118,7 +123,7 @@
                     <li class="header__menu-item"><a href="#" class="header__menu-link">Baby<img
                                 src="img/ic-chevron-down.png" alt="arrow" class="header__menu-arrow"></a>
                         <ul class="header__menu-sublist">
-                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example </a></li>
                             <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
                             <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
                             <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
@@ -127,7 +132,7 @@
                     <li class="header__menu-item"><a href="#" class="header__menu-link">Pharmacy<img
                                 src="img/ic-chevron-down.png" alt="arrow" class="header__menu-arrow"></a>
                         <ul class="header__menu-sublist">
-                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example </a></li>
                             <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
                             <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
                             <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
@@ -136,73 +141,212 @@
                 </ul>
             </div>
         </div>
+        <div class="header__bottom">
+            <div class=" container">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-link">Homepage</a></li>
+                    <li class="breadcrumb-item">Fruit and vagetable</li>
+                </ul>
+                <div class="sort__top">
+                    <h1 class="sort__title">Fruit and vegetables</h1>
+                    <div class="sort__top-view">
+                        <ul class="sort__top-list">
+                            <li class="sort__top-item"><a class="sort__top-link sort__top-link-active"
+                                    href="indexGrid.html"><img src="img/grid-view.png" alt="icon">Grid view</a></li>
+                            <li class="sort__top-item"><a class="sort__top-link" href="indexList.html"><img
+                                        src="img/list-view.png" alt="icon">List
+                                    view</a></li>
+                            <li class="sort__top-item"><a class="sort__top-link" href="#"><span
+                                        class="quantity-of-goods">117</span>
+                                    Products</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sort__hero">
+                    <div class="sort__hero-check">
+                        <input type="radio" id="filter" name="one">
+                        <label for="filter" class="sort__hero-label">Filtre text</label>
+                        <input type="radio" id="filterTwo" name="one">
+                        <label for="filterTwo" class="sort__hero-label">Filtre text</label>
+                    </div>
+                    <div class="sort__hero-check">
+                        <input type="checkbox" id="filterThree">
+                        <label for="filterThree" class="sort__hero-label">Filtre</label>
+                        <span class="sort__hero-check-span">Nbm</span>
+                    </div>
+                    <div class="sort__hero-check">
+                        <input type="checkbox" id="filterFour">
+                        <label for="filterFour" class="sort__hero-label">Filtre</label>
+                        <span class="sort__hero-check-span">Nbm</span>
+                    </div>
+                    <div class="sort__hero-check">
+                        <input type="checkbox" id="filterFive">
+                        <label for="filterFive" class="sort__hero-label">Filtre</label>
+                        <span class="sort__hero-check-span">12</span>
+                        <span class="sort__hero-check-line">|</span>
+                        <select class="sort__hero-check-select" name="select">
+                            <option value="1" selected>Select</option>
+                            <option value="2">Meat</option>
+                            <option value="3">Breat</option>
+                            <option value="4">Feash</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="sort__bottom">
+
+                </div>
+            </div>
+        </div>
     </header>
     <main class="main">
-        <section class="aside-cards">
-            <div class="container aside-cards__container">
-                <aside class="aside aside__main">
-                    <nav class="aside__nav">
-                        <strong class="aside__title">Category menu</strong>
+        <section class="specific-category">
+            <div class="container specific-category__container">
+                <aside class="aside">
+                    <nav class="aside__nav specific-category__nav">
+                        <strong class="aside__title">Categories</strong>
                         <ul class="aside__menu">
-                            <li class="aside__item"><a class="aside__link" href="#">Bakery</a></li>
-                            <li class="aside__item"><a class="aside__link" href="#">Fruit and vegetables</a></li>
-                            <li class="aside__item"><a class="aside__link" href="#">Meat and fish</a></li>
-                            <li class="aside__item"><a class="aside__link" href="#">Drinks</a></li>
-                            <li class="aside__item"><a class="aside__link" href="#">Kitchen</a></li>
+                            <li class="aside__item specific-category__aside-item">
+                                <a class="aside__link specific-category__aside-link" href="#">Category name</a>
+                                <span class="quantity-of-goods">320</span>
+                            </li>
+                            <li class="aside__item specific-category__aside-item">
+                                <a class="aside__link specific-category__aside-link" href="#">Category name</a>
+                                <span class="quantity-of-goods">112</span>
+                            </li>
+                            <li class="aside__item specific-category__aside-item">
+                                <a class="aside__link specific-category__aside-link" href="#">Category name</a>
+                                <span class="quantity-of-goods">12</span>
+                            </li>
+                            <li class="aside__item specific-category__aside-item">
+                                <a class="aside__link specific-category__aside-link" href="#">Category name</a>
+                                <span class="quantity-of-goods">48</span>
+                            </li>
                         </ul>
-                        <button class="button button--s button--aside">More categories<img
-                                src="img/arrow-right-blak.png" alt="arrow right"></button>
                     </nav>
-                    <nav class="aside__nav">
-                        <strong class="aside__title">Best selling products</strong>
+                    <nav class="aside__nav specific-category__nav">
+                        <strong class="aside__title">Brands</strong>
                         <ul class="aside__menu">
-                            <li class="aside__item"><a class="aside__link" href="#">Kitchen</a></li>
-                            <li class="aside__item"><a class="aside__link" href="#">Meat and fish</a></li>
-                            <li class="aside__item"><a class="aside__link" href="#">Special nutrition</a></li>
-                            <li class="aside__item"><a class="aside__link" href="#">Pharmacy</a></li>
-                            <li class="aside__item"><a class="aside__link" href="#">Baby</a></li>
+                            <li class="aside__item">
+                                <input type="checkbox" id="filter1">
+                                <label for="filter1" class="specific-category__label">Filtre by brand item</label>
+                            </li>
+                            <li class="aside__item">
+                                <input type="checkbox" id="filter2">
+                                <label for="filter2" class="specific-category__label">Filtre by brand item</label>
+                            </li>
+                            <li class="aside__item">
+                                <input type="checkbox" id="filter3">
+                                <label for="filter3" class="specific-category__label">Filtre by brand item</label>
+                            </li>
+                            <li class="aside__item">
+                                <input type="checkbox" id="filter4">
+                                <label for="filter4" class="specific-category__label">Filtre by brand item</label>
+                            </li>
+                            <li class="aside__item">
+                                <input type="checkbox" id="filter5">
+                                <label for="filter5" class="specific-category__label">Filtre by brand item</label>
+                            </li>
                         </ul>
-                        <button class="button button--s button--aside">More categories<img
-                                src="img/arrow-right-blak.png" alt="arrow right"></button>
                     </nav>
-                    <nav class="aside__nav">
-                        <strong class="aside__title">Best from Farmers</strong>
+                    <nav class="aside__nav specific-category__nav">
+                        <strong class="aside__title">Rating</strong>
                         <ul class="aside__menu">
-                            <li class="aside__item"><a class="aside__link" href="#">Carrots</a></li>
-                            <li class="aside__item"><a class="aside__link" href="#">Tomatoes</a></li>
-                            <li class="aside__item"><a class="aside__link" href="#">Potatoes</a></li>
-                            <li class="aside__item"><a class="aside__link" href="#">Chicken</a></li>
-                            <li class="aside__item"><a class="aside__link" href="#">Pork</a></li>
+                            <li class="aside__item">
+                                <input type="checkbox" id="star1">
+                                <label for="star1" class="specific-category__label">
+                                    <img src="img/actions-star.png" alt="star">
+                                    <img src="img/actions-star.png" alt="star">
+                                    <img src="img/actions-star.png" alt="star">
+                                    <img src="img/actions-star.png" alt="star">
+                                    <img src="img/actions-star.png" alt="star">
+                                </label>
+                            </li>
+                            <li class="aside__item">
+                                <input type="checkbox" id="star2">
+                                <label for="star2" class="specific-category__label">
+                                    <img src="img/actions-star.png" alt="star">
+                                    <img src="img/actions-star.png" alt="star">
+                                    <img src="img/actions-star.png" alt="star">
+                                    <img src="img/actions-star.png" alt="star">
+                                    <img src="img/star.png" alt="star">
+                                </label>
+                            </li>
+                            <li class="aside__item">
+                                <input type="checkbox" id="star3">
+                                <label for="star3" class="specific-category__label">
+                                    <img src="img/actions-star.png" alt="star">
+                                    <img src="img/actions-star.png" alt="star">
+                                    <img src="img/actions-star.png" alt="star">
+                                    <img src="img/star.png" alt="star">
+                                    <img src="img/star.png" alt="star">
+                                </label>
+                            </li>
+                            <li class="aside__item">
+                                <input type="checkbox" id="star4">
+                                <label for="star4" class="specific-category__label">
+                                    <img src="img/actions-star.png" alt="star">
+                                    <img src="img/actions-star.png" alt="star">
+                                    <img src="img/star.png" alt="star">
+                                    <img src="img/star.png" alt="star">
+                                    <img src="img/star.png" alt="star">
+                                </label>
+                            </li>
+                            <li class="aside__item">
+                                <input type="checkbox" id="star5">
+                                <label for="star5" class="specific-category__label">
+                                    <img src="img/actions-star.png" alt="star">
+                                    <img src="img/star.png" alt="star">
+                                    <img src="img/star.png" alt="star">
+                                    <img src="img/star.png" alt="star">
+                                    <img src="img/star.png" alt="star">
+                                </label>
+                            </li>
                         </ul>
-                        <button class="button button--s button--aside">More categories<img
-                                src="img/arrow-right-blak.png" alt="arrow right"></button>
+                    </nav>
+
+                    <nav class="aside__nav">
+                        <strong class="aside__title">Price</strong>
+                        <div class="range-slider">
+                            <input type="text" class="js-range-slider" value="" />
+                        </div>
+
+                        <div class="extra-controls">
+                            <div class="input-default">
+                                <span class="input-min">Min</span>
+                                <input type="text" class="js-input-from" value="0" />
+                            </div>
+
+                            <div class="input-default">
+                                <span class="input-max">Max</span>
+                                <input type="text" class="js-input-to" value="0" />
+                            </div>
+                        </div>
+                        <div class="range-buttons">
+                            <button class="range-button--activ">Apply</button>
+                            <button class="range-button">Reset</button>
+                        </div>
                     </nav>
                 </aside>
-                <div class="cards">
-                    <div class="cards__banners">
-                        <div class="cards__banners-wrap">
-                            <h4 class="cards__banners-subtitle">Banner subfocus</h4>
-                            <h3 class="cards__banners-title">Space for heading</h3>
-                            <button class="button button--s button--banner">Read recepies <img
-                                    src="img/arrow_right-green.png" alt="arrow"></button>
-                        </div>
-                        <div class="cards__banners-wrap">
-                            <h4 class="cards__banners-subtitle">Banner subfocus</h4>
-                            <h3 class="cards__banners-title">Space for heading</h3>
-                            <button class="button button--s button--banner">Read recepies <img
-                                    src="img/arrow_right-green.png" alt="arrow"></button>
-                        </div>
-                    </div>
-                    <div class="cards__product cards__product-top">
-                        <div class="cards__product-info">
+
+                <nav class="cards">
+                    <div class="cards__product cards__product-top-grid">
+                        <div class="cards__product-info sell-card">
                             <div class="cards__product-wrappimg"> <img class="cards__product-img" src="img/fruit.jpg"
                                     alt="product">
                             </div>
                             <h3 class="cards__product-title">Product Title</h3>
                             <p class="cards__product-text">Space for a small product description</p>
+                            <div class="products__rating">
+                                <img src="img/blak-star.png" alt="star">
+                                <img src="img/blak-star.png" alt="star">
+                                <img src="img/blak-star.png" alt="star">
+                                <img src="img/blak-star.png" alt="star">
+                                <img src="img/star.png" alt="star">
+                            </div>
                             <div class="cards__product-buy">
                                 <div class="cards__product-price">
                                     <span class="cards__product-price-new">1.48 USD</span>
+                                    <span class="cards__product-price-old">48.56</span>
                                 </div>
                                 <button class="button button--primary button--buy">Buy now </button>
                             </div>
@@ -221,24 +365,30 @@
                                 <button class="button button--primary button--buy">Buy now </button>
                             </div>
                         </div>
-                        <div class="cards__product-info sell-card">
+                        <div class="cards__product-info">
                             <div class="cards__product-wrappimg"> <img class="cards__product-img"
                                     src="img/products4.jpg" alt="product">
                             </div>
                             <h3 class="cards__product-title">Product Title</h3>
                             <p class="cards__product-text">Space for a small product description</p>
+                            <div class="products__rating">
+                                <img src="img/blak-star.png" alt="star">
+                                <img src="img/blak-star.png" alt="star">
+                                <img src="img/blak-star.png" alt="star">
+                                <img src="img/blak-star.png" alt="star">
+                                <img src="img/star.png" alt="star">
+                            </div>
                             <div class="cards__product-buy">
                                 <div class="cards__product-price">
                                     <span class="cards__product-price-new">1.12 USD</span>
-                                    <span class="cards__product-price-old">48.56</span>
                                 </div>
                                 <button class="button button--primary button--buy">Buy now </button>
                             </div>
                         </div>
                     </div>
-                    <div class="cards__product">
-                        <div class="cards__product-info">
-                            <div class="cards__product-wrappimg"> <img class="cards__product-img" src="img/producrs.jpg"
+                    <div class="cards__product cards__product-top-grid">
+                        <div class="cards__product-info sell-card">
+                            <div class="cards__product-wrappimg"> <img class="cards__product-img" src="img/fruit.jpg"
                                     alt="product">
                             </div>
                             <h3 class="cards__product-title">Product Title</h3>
@@ -247,19 +397,89 @@
                                 <div class="cards__product-price">
                                     <span class="cards__product-price-new">1.48 USD</span>
                                 </div>
-                                <button class="button button--primary button--buy">Buy now</button>
+                                <button class="button button--primary button--buy">Buy now </button>
                             </div>
                         </div>
                         <div class="cards__product-info sell-card">
+                            <div class="cards__product-wrappimg"> <img class="cards__product-img"
+                                    src="img/healthy-foods.jpg" alt="product">
+                            </div>
+                            <h3 class="cards__product-title">Product Title</h3>
+                            <p class="cards__product-text">Space for a small product description</p>
+                            <div class="products__rating">
+                                <img src="img/blak-star.png" alt="star">
+                                <img src="img/blak-star.png" alt="star">
+                                <img src="img/blak-star.png" alt="star">
+                                <img src="img/blak-star.png" alt="star">
+                                <img src="img/star.png" alt="star">
+                            </div>
+                            <div class="cards__product-buy">
+                                <div class="cards__product-price">
+                                    <span class="cards__product-price-new">0.28 USD</span>
+                                    <span class="cards__product-price-old">48.56</span>
+                                </div>
+                                <button class="button button--primary button--buy">Buy now </button>
+                            </div>
+                        </div>
+                        <div class="cards__product-info">
+                            <div class="cards__product-wrappimg"> <img class="cards__product-img"
+                                    src="img/products4.jpg" alt="product">
+                            </div>
+                            <h3 class="cards__product-title">Product Title</h3>
+                            <p class="cards__product-text">Space for a small product description</p>
+                            <div class="products__rating">
+                                <img src="img/blak-star.png" alt="star">
+                                <img src="img/blak-star.png" alt="star">
+                                <img src="img/blak-star.png" alt="star">
+                                <img src="img/blak-star.png" alt="star">
+                                <img src="img/star.png" alt="star">
+                            </div>
+                            <div class="cards__product-buy">
+                                <div class="cards__product-price">
+                                    <span class="cards__product-price-new">1.12 USD</span>
+                                </div>
+                                <button class="button button--primary button--buy">Buy now </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards__product">
+                        <div class="cards__product-info sell-card">
+                            <div class="cards__product-wrappimg"> <img class="cards__product-img" src="img/producrs.jpg"
+                                    alt="product">
+                            </div>
+                            <h3 class="cards__product-title">Product Title</h3>
+                            <p class="cards__product-text">Space for a small product description</p>
+                            <div class="products__rating">
+                                <img src="img/blak-star.png" alt="star">
+                                <img src="img/blak-star.png" alt="star">
+                                <img src="img/blak-star.png" alt="star">
+                                <img src="img/blak-star.png" alt="star">
+                                <img src="img/star.png" alt="star">
+                            </div>
+                            <div class="cards__product-buy">
+                                <div class="cards__product-price">
+                                    <span class="cards__product-price-new">1.48 USD</span>
+                                    <span class="cards__product-price-old">48.56</span>
+                                </div>
+                                <button class="button button--primary button--buy">Buy now</button>
+                            </div>
+                        </div>
+                        <div class="cards__product-info">
                             <div class="cards__product-wrappimg"> <img class="cards__product-img"
                                     src="img/products3.jpg" alt="product">
                             </div>
                             <h3 class="cards__product-title">Product Title</h3>
                             <p class="cards__product-text">Space for a small product description</p>
+                            <div class="products__rating">
+                                <img src="img/blak-star.png" alt="star">
+                                <img src="img/blak-star.png" alt="star">
+                                <img src="img/blak-star.png" alt="star">
+                                <img src="img/blak-star.png" alt="star">
+                                <img src="img/star.png" alt="star">
+                            </div>
                             <div class="cards__product-buy">
                                 <div class="cards__product-price">
                                     <span class="cards__product-price-new">0.28 USD</span>
-                                    <span class="cards__product-price-old">48.56</span>
                                 </div>
                                 <button class="button button--primary button--buy">Buy now</button>
                             </div>
@@ -279,196 +499,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
 
-
-        <section class="slider">
-            <div class="container">
-                <div class="slider__top">
-                    <h3 class="slider__title">Our customers says</h3>
-                    <button class="button button--xs">Button <img src="img/arrow_right-green.png" alt="arrow"></button>
-                </div>
-                <div class="swiper">
-                    <div class="swiper-wrapper slider__wrap slider__container">
-                        <div class="swiper-slide">
-                            <div class="slider__card">
-                                <p class="slider__card-text">“ This is an super space for your
-                                    <br> customers qoute. Don’t worry it works
-                                    <br> smooth as pie. You will get all what you
-                                    <br> need by writiing a text here “
-                                </p>
-                                <span class="slider__card-name">Name and Surname</span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider__card">
-                                <p class="slider__card-text">“ This is an super space for your
-                                    <br> customers qoute. Don’t worry it works
-                                    <br> smooth as pie. You will get all what you
-                                    <br> need by writiing a text here “
-                                </p>
-                                <span class="slider__card-name">Name and Surname</span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider__card">
-                                <p class="slider__card-text">“ This is an super space for your
-                                    <br> customers qoute. Don’t worry it works
-                                    <br> smooth as pie. You will get all what you
-                                    <br> need by writiing a text here “
-                                </p>
-                                <span class="slider__card-name">Name and Surname</span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slider__card">
-                                <p class="slider__card-text">“ This is an super space for your
-                                    <br> customers qoute. Don’t worry it works
-                                    <br> smooth as pie. You will get all what you
-                                    <br> need by writiing a text here “
-                                </p>
-                                <span class="slider__card-name">Name and Surname</span>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="headline">
-            <div class="container">
-                <div class="headline__top">
-                    <h3 class="headline__title">Section Headline</h3>
-                    <button class="button button--xs">Button <img src="img/arrow_right-green.png" alt="arrow"></button>
-                </div>
-                <div class="headline__products">
-                    <div class="cards__product-info headline__card">
-                        <div class="cards__product-wrappimg">
-                            <img class="cards__product-img" src="img/fruit.jpg" alt="product">
-                        </div>
-                        <h3 class="cards__product-title">Product Title</h3>
-                        <p class="cards__product-text">Space for a small product description</p>
-                        <div class="cards__product-buy">
-                            <div class="cards__product-price">
-                                <span class="cards__product-price-new">1.48 USD</span>
-                            </div>
-                            <button class="button button--primary button--buy">Buy now </button>
-                        </div>
-                    </div>
-                    <div class="cards__product-info headline__card">
-                        <div class="cards__product-wrappimg">
-                            <img class="cards__product-img" src="img/healthy-foods.jpg" alt="product">
-                        </div>
-                        <h3 class="cards__product-title">Product Title</h3>
-                        <p class="cards__product-text">Space for a small product description</p>
-                        <div class="cards__product-buy">
-                            <div class="cards__product-price">
-                                <span class="cards__product-price-new">0.28 USD</span>
-                            </div>
-                            <button class="button button--primary button--buy">Buy now </button>
-                        </div>
-                    </div>
-                    <div class="cards__product-info sell-card headline__card">
-                        <div class="cards__product-wrappimg">
-                            <img class="cards__product-img" src="img/products2.jpg" alt="product">
-                        </div>
-                        <h3 class="cards__product-title">Product Title</h3>
-                        <p class="cards__product-text">Space for a small product description</p>
-                        <div class="cards__product-buy">
-                            <div class="cards__product-price">
-                                <span class="cards__product-price-new">1.12 USD</span>
-                                <span class="cards__product-price-old">48.56</span>
-                            </div>
-                            <button class="button button--primary button--buy">Buy now</button>
-                        </div>
-                    </div>
-                    <div class="cards__product-info headline__card">
-                        <div class="cards__product-wrappimg"> <img class="cards__product-img" src="img/products4.jpg"
-                                alt="product">
-                        </div>
-                        <h3 class="cards__product-title">Product Title</h3>
-                        <p class="cards__product-text">Space for a small product description</p>
-                        <div class="cards__product-buy">
-                            <div class="cards__product-price">
-                                <span class="cards__product-price-new">1.12 USD</span>
-                            </div>
-                            <button class="button button--primary button--buy">Buy now </button>
-                        </div>
-                    </div>
-                </div>
-        </section>
-
-        <section class="posts">
-            <div class="container posts__container">
-                <div class="posts__top">
-                    <h3 class="posts__title">Read our Blog posts</h3>
-                    <a class="posts__many" href="blogPosts.html">
-                        Go to Blog<img src="img/arrow_right-green.png" alt="arrow">
-                    </a>
-                </div>
-                <div class="posts__wrap">
-                    <div class="posts__wrap-left">
-                        <span class="posts__wrap-left-category">Dinner tips</span>
-                        <h3 class="posts__wrap-left-title">Our chef tips for a great and tasty <br>
-                            dinner ready in 20 minutes</h3>
-                        <div class="posts__wrap-author">
-                            <img src="img/human.png" alt="human">
-                            <span class="posts__wrap-name posts__wrap-span-white">Author</span>
-                            <span class="posts__wrap-data posts__wrap-span-white">17. 6. 2020</span>
-                        </div>
-                    </div>
-                    <div class="posts__wrap-center">
-                        <img class="posts__wrap-center-img" src="img/posts-img2.png" alt="foto">
-                        <p class="posts__wrap-center-category">Vegetable</p>
-                        <h3 class="posts__wrap-center-title">Which vegetable your family <br>
-                            will love and want’s eat each <br>
-                            day</h3>
-                        <div class="posts__wrap-author">
-                            <span class="posts__wrap-name">Author</span>
-                            <span class="posts__wrap-data">17. 6. 2020</span>
-                        </div>
-                    </div>
-                    <div class="posts__wrap-right">
-                        <div class="posts__wrap-card">
-                            <div class="posts__wrap-card-content">
-                                <h4 class="posts__wrap-card-title">Salat is kinda good start to <br> your morning
-                                    routines
-                                </h4>
-                                <div class="posts__wrap-author">
-                                    <span class="posts__wrap-name">Author</span>
-                                    <span class="posts__wrap-data">17. 6. 2020</span>
-                                </div>
-                            </div>
-                            <img class="posts__wrap-card-img" src="img/posts-img3.png" alt="foto">
-                        </div>
-                        <div class="posts__wrap-card">
-                            <div class="posts__wrap-card-content">
-                                <h4 class="posts__wrap-card-title">Our chef tips for a great and <br> healthy breakfast
-                                </h4>
-                                <div class="posts__wrap-author">
-                                    <span class="posts__wrap-name">Author</span>
-                                    <span class="posts__wrap-data">17. 6. 2020</span>
-                                </div>
-                            </div>
-                            <img class="posts__wrap-card-img" src="img/posts-img4.png" alt="foto">
-                        </div>
-                        <div class="posts__wrap-card">
-                            <div class="posts__wrap-card-content">
-                                <h4 class="posts__wrap-card-title">Prepare a simple and <br> delicious breads</h4>
-                                <div class="posts__wrap-author">
-                                    <span class="posts__wrap-name">Author</span>
-                                    <span class="posts__wrap-data">17. 6. 2020</span>
-                                </div>
-                            </div>
-                            <img class="posts__wrap-card-img" src="img/posts-img5.png" alt="foto">
-                        </div>
-                    </div>
-                </div>
+                </nav>
             </div>
         </section>
     </main>
@@ -546,8 +578,12 @@
             <span class="footer__copyright">Copyright © 2020 petrbilek.com</span>
         </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/comman.js"></script>
+
 </body>
 
 </html>

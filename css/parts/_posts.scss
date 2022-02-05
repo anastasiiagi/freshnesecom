@@ -15,6 +15,17 @@
         margin: 0;
     }
 
+    &__many {
+        text-decoration: none;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 22px;
+        color: $dark;
+        @include dfcc;
+    }
+
     &__wrap {
         @include dfcc;
         align-items: flex-start;

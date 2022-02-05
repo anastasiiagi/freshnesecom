@@ -7,6 +7,7 @@
 }
 
 .aside {
+    padding-top: 60px;
     &__nav {
         margin-bottom: 150px;
         &:last-child {
@@ -47,6 +48,7 @@
 }
 
 .cards {
+    padding-top: 60px;
     &__banners {
         @include dfcc;
         margin-bottom: 130px;

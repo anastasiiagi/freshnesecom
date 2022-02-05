@@ -60,6 +60,7 @@ a.button {
         padding: 6.5px 12px;
         color: #FFFFFF;
         border-radius: 12px;
+        border: 2px solid #46760A;
     }
 
     &--s {
@@ -72,5 +73,13 @@ a.button {
         border-radius: 12px;
     }
 
-    
+    &--compare {
+        background: #FFFFFF;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 22px;
+        color: $dark;
+    }
 }

@@ -1,0 +1,7 @@
+.posts__new {
+    &-container {
+        display: grid;
+        grid-template-columns: 568px 1fr;
+        grid-gap: 0 32px;
+    }
+}
