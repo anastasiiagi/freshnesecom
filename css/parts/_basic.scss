@@ -258,6 +258,11 @@ th{
         display: flex;
         justify-content: space-between;
         padding: 0;
+        margin-bottom: 15px;
+        @media (max-width: 420px) {
+            @include dffc;
+            align-items: inherit;
+        }
     }
 
     &__item {
@@ -272,49 +277,16 @@ th{
         &:last-child {
             margin-right: 0;
         }
-
-        &-two {
-            position: relative;
-
-            &:after {
-                content: "18";
-                position: absolute;
-                padding: 0px 8px;
-                width: 29px;
-                height: 18px;
-                background: #f4f8ec;
-                border-radius: 12px;
-                font-family: Poppins;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 12px;
-                line-height: 18px;
-                color: #6a983c;
-                left: 105%;
-                bottom: 17%;
-            }
-        }
-
-        &-three {
-            position: relative;
-
-            &:after {
-                content: "4";
-                position: absolute;
-                padding: 0px 0px 0 9px;
-                width: 29px;
-                height: 18px;
-                background: #f4f8ec;
-                border-radius: 12px;
-                font-family: Poppins;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 12px;
-                line-height: 18px;
-                color: #6a983c;
-                left: 105%;
-                bottom: 17%;
-            }
+        &-span {
+            background: #F4F8EC;
+            border-radius: 12px;
+            padding: 0 8px;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            color: #6A983C;
         }
     }
 
@@ -352,4 +324,36 @@ table {
 
 .col1 {
     width: 100px;
+}
+
+.posts__link{
+    text-decoration: none;
+    &-new {
+        @media (max-width: 750px) {
+            width: 100%;
+        }
+    }
+}
+
+.shield {
+    margin-top: 32px;
+    &-title {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: $dark;
+        margin-top: 8px;
+        margin-bottom: 2px;
+    }
+    &-text {
+        font-family: OpenSans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: #A9A9A9;
+        margin: 0;
+    }
 }

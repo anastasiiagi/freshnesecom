@@ -3,15 +3,51 @@
         display: grid;
         grid-template-columns: 270px 1fr;
         grid-gap: 0 30px;
+        @media (max-width: 1020px) {
+            grid-template-columns: 200px 1fr;
+            grid-gap: 0 20px;
+        }
+        @media (max-width: 940px) {
+            @include dffc;
+            align-items: inherit;
+        }
     }
 }
 
 .aside {
     padding-top: 60px;
+    &__specific-category{
+        @media (max-width: 1017px) {
+            @include dfcc;
+        }
+
+        @media (max-width: 790px) {
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+    }
+    
     &__nav {
         margin-bottom: 150px;
+        @media (max-width: 940px) {
+            margin-bottom: 0;
+        }
+        @media (max-width: 790px) {
+            width: 50%;
+        }
+        @media (max-width: 500px) {
+            width: 80%;
+        }
         &:last-child {
             margin-bottom: 150px;
+             @media (max-width: 940px) {
+                margin-bottom: 0;
+             }
+        }
+    }
+    &__carrots {
+        @media (max-width: 960px) {
+            @include dfcc;
         }
     }
     &__title {
@@ -28,6 +64,9 @@
     &__menu {
         list-style: none;
         margin-bottom: 48px;
+        @media (max-width: 790px) {
+            margin-bottom: 0;
+        }
     }
 
     &__item {
@@ -45,6 +84,12 @@
         line-height: 19px;
         color: $accent;
     }
+
+    &__main {
+        @media (max-width: 700px) {
+            display: none;
+        }
+    }
 }
 
 .cards {
@@ -52,10 +97,22 @@
     &__banners {
         @include dfcc;
         margin-bottom: 130px;
+        @media (max-width: 700px) {
+            @include dffc;
+        }
         &-wrap {
             background: url(../img/fone-banner.png);
-            padding: 48px 181px 32px 34px;
+            padding: 48px 0 32px 34px;
             border-radius: 25px;
+            width: 100%;
+            max-width: 404px;
+            &:first-child {
+                margin-right: 20px;
+                @media (max-width: 700px) {
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                }
+            }
         }
         &-subtitle {
             margin-top: 0;
@@ -79,11 +136,12 @@
         }
     }
     &__product {
-        @include dfcc;
-        align-items: flex-start;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
-        &-top {
-            margin-bottom: 128px;
+        @media (max-width: 500px) {
+            justify-content: center;
         }
 
         &-wrappimg{
@@ -106,6 +164,15 @@
             border-radius: 12px;
             padding: 16px;
             width: 30%;
+            margin-bottom: 100px;
+            @media (max-width: 770px) {
+                width: 45%;
+            }
+            @media (max-width: 500px) {
+                width: 75%;
+                text-align: center;
+                margin-bottom: 80px;
+            }
         }
         &-title {
             font-family: Poppins;

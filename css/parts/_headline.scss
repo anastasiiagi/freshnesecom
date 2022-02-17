@@ -15,11 +15,24 @@
     }
     &__products {
         @include dfcc;
+        @media (max-width: 965px) {
+            flex-wrap: wrap;
+        }
+        @media (max-width: 500px) {
+            justify-content: center;
+        }
     }
     &__card {
         margin-right: 32px;
         &:last-child {
             margin-right: 0;
+        }
+        @media (max-width: 965px) {
+            margin-right: 0;
+            width: 48%;
+        }
+        @media (max-width: 510px) {
+            width: 90%;
         }
     }
 }

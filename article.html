@@ -144,178 +144,196 @@
             <div class="container">
                 <ul class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-link">Homepage</a></li>
-                    <li class="breadcrumb-item">Blog Posts</li>
+                    <li class="breadcrumb-item"><a href="blogPosts.html" class="breadcrumb-link">Blog Posts</a></li>
+                    <li class="breadcrumb-item">Article</li>
                 </ul>
             </div>
         </div>
     </header>
 
     <main class="main">
-        <section class="posts__new">
-            <div class="container posts__new-container">
-                <a class="posts__link posts__link-new" href="">
-                    <div class="posts__wrap-left">
-                        <span class="posts__wrap-left-category">Dinner tips</span>
-                        <h3 class="posts__wrap-left-title">Our chef tips for a great and tasty <br>
-                            dinner ready in 20 minutes</h3>
-                        <div class="posts__wrap-author">
-                            <img src="img/human.png" alt="human">
-                            <span class="posts__wrap-name posts__wrap-span-white">Author</span>
-                            <span class="posts__wrap-data posts__wrap-span-white">17. 6. 2020</span>
-                        </div>
+        <section class="article">
+            <div class="container article__container">
+                <div class="article__wrap">
+                    <img src="img/rectangle.png" class="rectangle" alt="">
+                    <div class="article__lists">
+                        <ul class="article__list">
+                            <li class="article__list-item">Date:</li>
+                            <li class="article__list-item">Category:</li>
+                            <li class="article__list-item">Author:</li>
+                        </ul>
+                        <ul class="article__list">
+                            <li class="article__list-item">22. 6. 2020</li>
+                            <li class="article__list-item">Dinner</li>
+                            <li class="article__list-item">Admin</li>
+                        </ul>
                     </div>
-                </a>
-                <a class="posts__link posts__link-new" href="">
-                    <div class="posts__wrap-left posts__new-right">
-                        <span class="posts__wrap-left-category">Dinner tips</span>
-                        <h3 class="posts__wrap-left-title">Our chef tips for a great and tasty <br>
-                            dinner ready in 20 minutes</h3>
-                        <div class="posts__wrap-author">
-                            <img src="img/human.png" alt="human">
-                            <span class="posts__wrap-name posts__wrap-span-white">Author</span>
-                            <span class="posts__wrap-data posts__wrap-span-white">17. 6. 2020</span>
-                        </div>
-                    </div>
-                </a>
+                    <h1 class="article__title">Space for your heading, can be <br>
+                        larger so don’t worry - large <br>
+                        heading looks better
+                    </h1>
+                </div>
             </div>
         </section>
 
-        <section class="posts__all">
-            <div class="container posts__all-container">
-                <aside class="aside posts__all-aside">
-                    <nav class="aside__nav posts__all-archives">
-                        <strong class="aside__title">Archives</strong>
-                        <ul class="aside__menu">
-                            <li class="aside__item posts__all-item">
-                                <a class="aside__link posts__all-link" href="#">March 2020</a>
-                            </li>
-                            <li class="aside__item posts__all-item">
-                                <a class="aside__link posts__all-link" href="#">February 2020</a>
-                            </li>
-                            <li class="aside__item posts__all-item">
-                                <a class="aside__link posts__all-link" href="#">January 2020</a>
-                            </li>
-                            <li class="aside__item posts__all-item">
-                                <a class="aside__link posts__all-link" href="#">November 2019</a>
-                            </li>
-                            <li class="aside__item posts__all-item">
-                                <a class="aside__link posts__all-link" href="#">December 2019</a>
-                            </li>
+        <section class="article__content">
+            <div class="container article__content-container">
+                <aside>
+                    <nav class="article__tags">
+                        <strong class="article__tags-title">Tags</strong>
+                        <ul class="article__tags-list">
+                            <li class="posts__wrap-center-category article__tags-item">Food</li>
+                            <li class="posts__wrap-center-category article__tags-item">Recepies</li>
+                            <li class="posts__wrap-center-category article__tags-item">Fresh</li>
+                            <li class="posts__wrap-center-category article__tags-item">Vegetable</li>
                         </ul>
                     </nav>
-                    <nav class="aside__nav posts__all-category">
-                        <strong class="aside__title">Category</strong>
-                        <ul class="aside__menu">
-                            <li class="aside__item posts__all-item">
-                                <a class="aside__link posts__all-link-not-active" href="#">Food</a>
-                            </li>
-                            <li class="aside__item posts__all-item">
-                                <a class="aside__link posts__all-link-not-active" href="#">Chefs specialities</a>
-                            </li>
-                            <li class="aside__item posts__all-item">
-                                <a class="aside__link posts__all-link-not-active" href="#">Vegetable</a>
-                            </li>
-                            <li class="aside__item posts__all-item">
-                                <a class="aside__link posts__all-link-not-active" href="#">Meat</a>
-                            </li>
-                            <li class="aside__item posts__all-item">
-                                <a class="aside__link posts__all-link-not-active" href="#">Recommendations</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <nav class="aside__nav posts__all-list">
-                        <strong class="aside__title">Join our list</strong>
-                        <p class="posts__all-list-text">Signup to be the first to hear about <br>
-                            exclusive deals, special offers, recepies <br>
-                            from our masters and others.
-                        </p>
-                        <div class="posts__all-wrapp">
-                            <input class="posts__all-input" type="text" value="Your email adress"
-                                onfocus="this.value=''">
-                            <button class="posts__all-button">Subscribe</button>
-                        </div>
-                    </nav>
+                    <a class="button button--article-tags" href="blogPosts.html">
+                        <img src="img/icleft.png" alt="icon">
+                        Back to Blog
+                    </a>
                 </aside>
-                <ul class="posts__other">
-                    <li class="posts__wrap posts__wrap-blog">
-                        <a class="posts__link" href="">
-                            <img class="posts__wrap-center-img" src="img/posts-img7.png" alt="foto">
-                            <p class="posts__wrap-center-category posts__other-category">Top</p>
-                            <h3 class="posts__wrap-center-title">Space for your heding is <br>
-                                here, write what you need
-                            </h3>
-                            <div class="posts__wrap-author">
-                                <span class="posts__wrap-name">Author</span>
-                                <span class="posts__wrap-data">17. 6. 2020</span>
+                <div class="article__content-wrap">
+                    <p class="article__content-text">There’s nothing like a warm cup of tea to start your morning—or
+                        maybe you’re all about an iced
+                        hibiscus on a sunny
+                        Saturday afternoon. Whether you’re just craving chamomile or are looking to ditch your coffee
+                        dependency, here’s our
+                        go-to guide on incorporating a few new teas into your daily routine!
+                    </p>
+                    <h3 class="article__content-title">Morning Ritual // 9:00 AM</h3>
+                    <p class="article__content-text">Want that extra morning energy without the caffeine jitters? Switch
+                        out your morning mug of
+                        coffee for a warm,
+                        energizing cup of earl grey. Serve as is or stir in some milk and honey for extra coziness. If
+                        you want to spice things
+                        up, try chai tea instead! The combination of cinnamon, cardamom, and ginger smells amazing and
+                        gives you that nice
+                        little flavor kick to start your day off right.
+                    </p>
+                    <h3 class="article__content-title">Mid-day Boost // 2:00 PM</h3>
+                    <p class="article__content-text">If you’re feeling a little sluggish post-lunch, beat the afternoon
+                        slump with some lemon ginger
+                        green tea. Green tea can
+                        be a great alternative to coffee in the afternoon when you want that little boost of energy. An
+                        added benefit: lemon and
+                        ginger work together to aid digestion which is especially helpful after lunch.
+                        <br>
+                        <br>
+                        If you’re not into hot drinks, opt-in for a fruity iced green tea instead. Steep some honeydew
+                        or peach green tea in hot
+                        water for a few minutes and then pour over ice until it’s nice and cool. Enjoy with a slice of
+                        lemon, and you’ll feel
+                        refreshed and ready to tackle any task.
+                    </p>
+                    <h3 class="article__content-title">Evening Calm // 8:00 PM</h3>
+                    <p class="article__content-text">
+                        Slip on some fuzzy socks, light your favorite candles, and fire up the kettle—it’s time to wind
+                        down
+                        after a long day.
+                        Grab yourself a soothing cup of lavender chamomile tea and indulge in some well-deserved
+                        self-love.
+                    </p>
+
+                    <ul class="share__list">
+                        <li class="share">Share</li>
+                        <li class="share__item">
+                            <a class="share__link" href="#">
+                                <img class="share__icon" src="img/Facebook.png" alt="icon">Facebook
+                            </a>
+                        </li>
+                        <li class="share__item">
+                            <a class="share__link" href="#">
+                                <img class="share__icon" src="img/Pinterest.png" alt="icon">Pinterest
+                            </a>
+                        </li>
+                        <li class="share__item">
+                            <a class="share__link" href="#">
+                                <img class="share__icon" src="img/Twitter.png" alt="icon">Twitter
+                            </a>
+                        </li>
+                        <li class="share__item">
+                            <a class="share__link" href="#">
+                                <img class="share__icon" src="img/linkedin.png" alt="icon">LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="article__form">
+                        <h2 class="article__form-title">Leave a reply</h2>
+                        <p class="article__form-text">Allrady have an account? Sign in to leave a reply.</p>
+                        <div class="article__form-fields">
+                            <div>
+                                <span class="article__form-data">Name<br></span>
+                                <input class="article__form-input" type="text" name="firstname" value="Name">
                             </div>
-                        </a>
-                    </li>
-                    <li class="posts__wrap posts__wrap-blog">
-                        <a class="posts__link" href="">
-                            <img class="posts__wrap-center-img" src="img/posts-img9.png" alt="foto">
-                            <p class="posts__wrap-center-category posts__other-category">Top</p>
-                            <h3 class="posts__wrap-center-title">Space for your heding is <br>
-                                here, write what you need
-                            </h3>
-                            <div class="posts__wrap-author">
-                                <span class="posts__wrap-name">Author</span>
-                                <span class="posts__wrap-data">17. 6. 2020</span>
+                            <div>
+                                <span class="article__form-data">Email address<br></span>
+                                <input class="article__form-input" type="text" name="email" value="Email addess">
                             </div>
-                        </a>
-                    </li>
-                    <li class="posts__wrap posts__wrap-blog">
-                        <a class="posts__link" href="">
-                            <img class="posts__wrap-center-img" src="img/posts-img2.png" alt="foto">
-                            <p class="posts__wrap-center-category posts__other-category">Top</p>
-                            <h3 class="posts__wrap-center-title">Space for your heding is <br>
-                                here, write what you need
-                            </h3>
-                            <div class="posts__wrap-author">
-                                <span class="posts__wrap-name">Author</span>
-                                <span class="posts__wrap-data">17. 6. 2020</span>
+                        </div>
+                        <div class="sort__hero-check article__form-checkbox">
+                            <input type="checkbox" id="filterFour">
+                            <label for="filterFour" class="sort__hero-label">Save my name and
+                                email in this browser for
+                                a next time comment.</label>
+                        </div>
+                        <span class="article__form-data">Comment<br></span>
+                        <textarea class="article__form-comment" name="body" cols="30" rows="10"
+                            placeholder="Space for your comments"></textarea>
+
+                        <button class="button button--primary button--difault button--article__form">Send a
+                            comment</button>
+                    </div>
+
+                    <div class="article__comments">
+                        <h2 class="article__comments-title">Comments</h2>
+                        <div class="article__comment">
+                            <div class="article__comment-author">
+                                <img class="article__comment-photo" src="img/photoone.png" alt="foto">
+                                <div class="bbjjk">
+                                    <span class="article__comment-name">Author</span>
+                                    <span class="article__comment-admin">Admin</span>
+                                    <span class="article__comment-data">22. 6. 2020</span>
+                                </div>
                             </div>
-                        </a>
-                    </li>
-                    <li class="posts__wrap posts__wrap-blog">
-                        <a class="posts__link" href="">
-                            <img class="posts__wrap-center-img" src="img/posts-img12.png" alt="foto">
-                            <p class="posts__wrap-center-category posts__other-category">Top</p>
-                            <h3 class="posts__wrap-center-title">Space for your heding is <br>
-                                here, write what you need
-                            </h3>
-                            <div class="posts__wrap-author">
-                                <span class="posts__wrap-name">Author</span>
-                                <span class="posts__wrap-data">17. 6. 2020</span>
+                            <p class="article__comment-text">
+                                Hi everyone, <br>
+                                we have been working hard with the team bringing a new articles. It has passed a few
+                                months till we released it in case
+                                of traveling and shooting, hopefully you’ll love it.
+                            </p>
+                        </div>
+                        <div class="article__comment">
+                            <div class="article__comment-author">
+                                <img class="article__comment-photo" src="img/phototwo.png" alt="foto">
+                                <div class="bbjjk">
+                                    <span class="article__comment-name">User</span>
+                                    <span class="article__comment-customer">Customer</span>
+                                    <span class="article__comment-data">22. 6. 2020</span>
+                                </div>
                             </div>
-                        </a>
-                    </li>
-                    <li class="posts__wrap posts__wrap-blog">
-                        <a class="posts__link" href="">
-                            <img class="posts__wrap-center-img" src="img/posts-img11.png" alt="foto">
-                            <p class="posts__wrap-center-category posts__other-category">Top</p>
-                            <h3 class="posts__wrap-center-title">Space for your heding is <br>
-                                here, write what you need
-                            </h3>
-                            <div class="posts__wrap-author">
-                                <span class="posts__wrap-name">Author</span>
-                                <span class="posts__wrap-data">17. 6. 2020</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="posts__wrap posts__wrap-blog">
-                        <a class="posts__link" href="">
-                            <img class="posts__wrap-center-img" src="img/posts-img10.png" alt="foto">
-                            <p class="posts__wrap-center-category posts__other-category">Top</p>
-                            <h3 class="posts__wrap-center-title">Space for your heding is <br>
-                                here, write what you need
-                            </h3>
-                            <div class="posts__wrap-author">
-                                <span class="posts__wrap-name">Author</span>
-                                <span class="posts__wrap-data">17. 6. 2020</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="posts__wrap posts__wrap-blog">
+                            <p class="article__comment-text">
+                                Don’t worry about that, we are happy to read a new stories. The time we had to wait was
+                                crazy, but the results are
+                                awesome! You did an epic job. Now I just need to a buy one.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="article__other">
+            <div class="container article__other-container">
+                <div class="posts__top">
+                    <h3 class="posts__title">Related topics</h3>
+                    <a class="posts__many" href="blogPosts.html">
+                        Go to Blog<img src="img/arrow_right-green.png" alt="arrow">
+                    </a>
+                </div>
+                <ul class="article__other-posts">
+                    <li class="posts__wrap-center article__other-post">
                         <a class="posts__link" href="">
                             <img class="posts__wrap-center-img" src="img/posts-img14.png" alt="foto">
                             <p class="posts__wrap-center-category posts__other-category">Top</p>
@@ -328,9 +346,35 @@
                             </div>
                         </a>
                     </li>
-                    <li class="posts__wrap posts__wrap-blog">
+                    <li class="posts__wrap-center article__other-post">
+                        <a class="posts__link" href="">
+                            <img class="posts__wrap-center-img" src="img/posts-img16.png" alt="foto">
+                            <p class="posts__wrap-center-category posts__other-category">Top</p>
+                            <h3 class="posts__wrap-center-title">Space for your heding is <br>
+                                here, write what you need
+                            </h3>
+                            <div class="posts__wrap-author">
+                                <span class="posts__wrap-name">Author</span>
+                                <span class="posts__wrap-data">17. 6. 2020</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="posts__wrap-center article__other-post">
                         <a class="posts__link" href="">
                             <img class="posts__wrap-center-img" src="img/posts-img13.png" alt="foto">
+                            <p class="posts__wrap-center-category posts__other-category">Top</p>
+                            <h3 class="posts__wrap-center-title">Space for your heding is <br>
+                                here, write what you need
+                            </h3>
+                            <div class="posts__wrap-author">
+                                <span class="posts__wrap-name">Author</span>
+                                <span class="posts__wrap-data">17. 6. 2020</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="posts__wrap-center article__other-post">
+                        <a class="posts__link" href="">
+                            <img class="posts__wrap-center-img" src="img/posts-img10.png" alt="foto">
                             <p class="posts__wrap-center-category posts__other-category">Top</p>
                             <h3 class="posts__wrap-center-title">Space for your heding is <br>
                                 here, write what you need
@@ -344,6 +388,7 @@
                 </ul>
             </div>
         </section>
+
     </main>
 
     <footer class="footer">

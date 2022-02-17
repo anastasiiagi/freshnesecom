@@ -1,0 +1,269 @@
+.checkout{
+    &__container {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-gap: 32px;
+        justify-content: space-between;
+        @media (max-width: 1200px) {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+    &__billing {
+        &-category {
+            margin-bottom: 64px;
+            &:last-child {
+                margin-bottom: 16px;
+            }
+        }
+        &-title {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 33px;
+            margin-top: 0;
+            margin-bottom: 4px;
+            color: $dark;
+        }
+        &-number-steps {
+            font-family: OpenSans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            color: #A9A9A9;
+            @include dfcc;
+            margin-bottom: 32px;
+        }
+        &-fields {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 32px;
+            justify-content: space-between;
+            margin-bottom: 32px;
+        }
+        &-input {
+            width: 100%;
+            max-width: 319px;
+        }
+        &-check {
+            max-width: 243px;
+            justify-content: flex-start;
+        }
+        &-method{
+            &-label {
+                @include dfcc;
+                width: 65%;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 18px;
+                color: $dark;
+                &-span {
+                    color: $accent;
+                    margin-right: 4px;
+                }
+                &-spans {
+                    @media (max-width: 450px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &-radio {
+            width: 100%;
+            max-width: 700px;
+            justify-content: space-between;
+
+            &:first-child  {
+                margin-bottom: 16px;
+            }
+            &-pay {
+                margin-bottom: 16px;
+            }
+        }
+        &-pay{
+            &-card{
+                margin-bottom: 16px;
+                padding: 16px;
+                background: #FFFFFF;
+                border: 1px solid #D1D1D1;
+                box-sizing: border-box;
+                border-radius: 12px;
+                &-credit {
+                    @include dfcc;
+                    margin-bottom: 32px;
+                }
+                &-data {
+                    @include dfcc;
+                    margin-top: 32px;
+                    @media (max-width: 450px) {
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+                    &-holder {
+                        width: 100%;
+                        max-width: 350px;
+                    }
+                    &-cvc {
+                        width: 100%;
+                        max-width: 120px;
+                    }
+                }
+                &-number {
+                    width: 100%;
+                
+                }
+                &-holder {
+                    max-width: 350px;
+                    width: 100%;
+                }
+                &-cvc {
+                    max-width: 120px;
+                    width: 100%;
+                }
+            }
+        }
+        &-notes {
+            width: 100%;
+            max-width: 700px;
+        }
+    }
+
+    &__cart {
+        background: #FFFFFF;
+        border: 1px solid #D1D1D1;
+        box-sizing: border-box;
+        border-radius: 12px;
+        padding: 32px 16px;
+        height: 100%;
+
+        &-title {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 33px;
+            margin-top: 0;
+            margin-bottom: 4px;
+            color: $dark;
+        }
+
+        &-text {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            color: #A9A9A9;
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+
+        &-product {
+            @include dfcc;
+            justify-content: flex-start;
+            margin-bottom: 40px;
+            @media (max-width: 450px) {
+                flex-direction: column;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &-img {
+                @include dffc;
+                margin-right: 16px;
+                @media (max-width: 450px) {
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                }
+            }
+            &-potato {
+                width: 100%;
+                max-width: 100px;
+                border-radius: 12px;
+                margin-bottom: 12px;
+            }
+            &-content {
+                width: 70%;
+                @media (max-width: 450px) {
+                    width: 100%;
+                }
+                &-title {
+                    margin-top: 0;
+                }
+                &-list {
+                    justify-content: space-between;
+                }
+                &-price {
+                    @include dfcc;
+                    margin-top: 16px;
+                    &-new{
+                        font-size: 18px;
+                    }
+                }
+                &-add-to-cart-number {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        &-payment {
+            margin-bottom: 40px;
+        }
+        &-check {
+            @include dfcc;
+            margin-bottom: 32px;
+            &-item {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 18px;
+                color: $dark;
+            }
+        }
+        &-apply {
+            position: relative;
+        }
+
+        &-input {
+            width: 100%;
+        }
+
+        &-all-sum {
+            @include dfcc;
+            @media (max-width: 450px) {
+                flex-direction: column;
+            }
+        }
+        &-order {
+            margin: 0;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            color: $dark;
+        }
+
+        &-day {
+            font-family: OpenSans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            color: $accent;
+        }
+        &-price {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 39px;
+            color: $accent;
+        }
+    }
+}

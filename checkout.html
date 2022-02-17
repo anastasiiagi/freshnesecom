@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Posts</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:regula,500,600,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:regular,600" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__top">
+                <div class="header__top-left">
+                    <ul class="header__top-list header__top-list-left">
+                        <li class="header__top-item"><a class="header__top-link" href="#">Chat with us</a></li>
+                        <li class="header__top-item"><a class="header__top-link header__contact"
+                                href="tel:+420 336 775 664">+420 336
+                                775 664</a></li>
+                        <li class="header__top-item"><a class="header__top-link header__contact"
+                                href="mailto:info@freshnesecom.com">info@freshnesecom.com</a></li>
+                    </ul>
+                </div>
+                <div class="header__top-right">
+                    <ul class="header__top-list">
+                        <li class="header__top-item"><a class="header__top-link" href="#">Blog</a></li>
+                        <li class="header__top-item"><a class="header__top-link" href="#">About Us</a></li>
+                        <li class="header__top-item"><a class="header__top-link" href="#">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="header__top-line">
+            <div class="header__hero">
+                <a href="index.html"><img class="header__hero-logo" src="img/header-logo.png" alt="logo"></a>
+                <div class="header__hero-input">
+                    <select class="header__hero-select" name="select">
+                        <option value="1" selected>All categories</option>
+                        <option value="2">Meat</option>
+                        <option value="3">Breat</option>
+                        <option value="4">Feash</option>
+                    </select>
+                    <span class="header__hero-line">|</span>
+                    <input class="header__input" type="text" value="Search Products, categories ..."
+                        onfocus="this.value=''">
+                    <img class="button" src="img/ic-search.png" width="16" alt="icon">
+                </div>
+                <div class="header__hero-cart">
+                    <a href="#"><img src="img/ic-user.png" width="24" alt="icon"></a>
+                    <a class="header__hero-before" href="checkout.html"><img src="img/ic-cart.png" width="24"
+                            alt="icon"></a>
+                </div>
+            </div>
+        </div>
+        <div class="header__menu ">
+            <div class="container">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item"><a href="#" class="header__menu-link">Bakery <img
+                                src="img/ic-chevron-down.png" alt="arrow" class="header__menu-arrow"></a>
+
+                        <ul class="header__menu-sublist">
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example </a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__menu-item"><a href="indexGrid.html" class="header__menu-link">Fruit and
+                            vegetables<img src="img/ic-chevron-down.png" alt="arrow" class="header__menu-arrow"></a>
+
+                        <ul class="header__menu-sublist">
+                            <li class="header__menu-item"><a href="carrots.html"
+                                    class="header__menu-sublink">Carrots</a>
+                            </li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__menu-item"><a href="#" class="header__menu-link">Meat and fish<img
+                                src="img/ic-chevron-down.png" alt="arrow" class="header__menu-arrow"></a>
+                        <ul class="header__menu-sublist">
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example </a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__menu-item"><a href="#" class="header__menu-link">Drinks<img
+                                src="img/ic-chevron-down.png" alt="arrow" class="header__menu-arrow"></a>
+                        <ul class="header__menu-sublist">
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example </a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__menu-item"><a href="#" class="header__menu-link">Kitchen<img
+                                src="img/ic-chevron-down.png" alt="arrow" class="header__menu-arrow"></a>
+                        <ul class="header__menu-sublist">
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example </a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__menu-item"><a href="#" class="header__menu-link">Special nutrition<img
+                                src="img/ic-chevron-down.png" alt="arrow" class="header__menu-arrow"></a>
+                        <ul class="header__menu-sublist">
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example </a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__menu-item"><a href="#" class="header__menu-link">Baby<img
+                                src="img/ic-chevron-down.png" alt="arrow" class="header__menu-arrow"></a>
+                        <ul class="header__menu-sublist">
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example </a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__menu-item"><a href="#" class="header__menu-link">Pharmacy<img
+                                src="img/ic-chevron-down.png" alt="arrow" class="header__menu-arrow"></a>
+                        <ul class="header__menu-sublist">
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example </a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-sublink">Example</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-link">Homepage</a></li>
+                    <li class="breadcrumb-item">Checkout page</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container checkout__container">
+            <section class="checkout__billing">
+                <div class="checkout__billing-category">
+                    <h3 class="checkout__billing-title">Billing info</h3>
+                    <div class="checkout__billing-number-steps">
+                        <span class="checkout__billing-secondary-title">Please enter your billing info</span>
+                        <span class="checkout__billing-step">Step 1 of 5</span>
+                    </div>
+                    <div class="checkout__billing-fields">
+                        <div>
+                            <span class="article__form-data">First name<br></span>
+                            <input class="article__form-input checkout__billing-input" type="text" name="firstname"
+                                value="First name" onfocus="this.value=''">
+                        </div>
+                        <div>
+                            <span class="article__form-data">Last name<br></span>
+                            <input class="article__form-input checkout__billing-input" type="text" name="name"
+                                value="Last name" onfocus="this.value=''">
+                        </div>
+                        <div>
+                            <span class="article__form-data">Email address<br></span>
+                            <input class="article__form-input checkout__billing-input" type="text" name="email"
+                                value="Email addess" onfocus="this.value=''">
+                        </div>
+                        <div>
+                            <span class="article__form-data">Phone number<br></span>
+                            <input class="article__form-input checkout__billing-input" type="text" name="Phone"
+                                value="Phone number" onfocus="this.value=''">
+                        </div>
+                        <div>
+                            <span class="article__form-data">Address<br></span>
+                            <input class="article__form-input checkout__billing-input" type="text" name="Address"
+                                value="Address" onfocus="this.value=''">
+                        </div>
+                        <div>
+                            <span class="article__form-data">Town / City<br></span>
+                            <input class="article__form-input checkout__billing-input" type="text" name="Town"
+                                value="Town or city" onfocus="this.value=''">
+                        </div>
+                        <div>
+                            <span class="article__form-data">State / Country<br></span>
+                            <input class="article__form-input checkout__billing-input" type="text" name="Country"
+                                list="state" value="Choose a state or Country" onfocus="this.value=''">
+                            <datalist id="state">
+                                <option value="Naples">Naples</option>
+                                <option value="London">London</option>
+                                <option value="Berlin">Berlin</option>
+                                <option value="New York">New York</option>
+                                <option value="Frattamaggiore">Frattamaggiore</option>
+                            </datalist>
+                        </div>
+                        <div>
+                            <span class="article__form-data">ZIP/Postal code<br></span>
+                            <input class="article__form-input checkout__billing-input" type="text" name="ZIP"
+                                value="Postal code or ZIP" onfocus="this.value=''">
+                        </div>
+                    </div>
+                    <div class="sort__hero-check checkout__billing-check">
+                        <input type="checkbox" id="filterFour">
+                        <label for="filterFour" class="sort__hero-label checkout__billing-label">Ship to a different
+                            address?</label>
+                    </div>
+                </div>
+                <div class="checkout__billing-category">
+                    <h3 class="checkout__billing-title">Billing method</h3>
+                    <div class="checkout__billing-number-steps">
+                        <span class="checkout__billing-secondary-title">Please enter your payment method</span>
+                        <span class="checkout__billing-step">Step 2 of 5</span>
+                    </div>
+                    <div class="checkout__billing-method">
+                        <div class="sort__hero-check checkout__billing-radio">
+                            <div>
+                                <input type="radio" name="name" id="filterFedEx">
+                                <span>FedEx</span>
+                            </div>
+                            <label for="filterFedEx" class="sort__hero-label checkout__billing-method-label">
+                                <div class="checkout__billing-method-label-spans">
+                                    <span class="checkout__billing-method-label-span">+32USD</span>Additional price
+                                </div>
+                                <img src="img/fedex.png" alt="FedEx">
+                            </label>
+                        </div>
+                        <div class="sort__hero-check checkout__billing-radio">
+                            <div>
+                                <input type="radio" name="name" id="filterDHL">
+                                <span>DHL</span>
+                            </div>
+                            <label for="filterDHL" class="sort__hero-label checkout__billing-method-label">
+                                <div class="checkout__billing-method-label-spans">
+                                    <span class="checkout__billing-method-label-span">+15USD</span>Additional price
+                                </div>
+                                <img src="img/dhl.png" alt="DHL">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout__billing-category">
+                    <h3 class="checkout__billing-title">Payment method</h3>
+                    <div class="checkout__billing-number-steps">
+                        <span class="checkout__billing-secondary-title">Please enter your payment method</span>
+                        <span class="checkout__billing-step">Step 3 of 5</span>
+                    </div>
+                    <div class="checkout__billing-pay">
+                        <div class="checkout__billing-pay-card">
+                            <div class="checkout__billing-pay-card-credit">
+                                <div>
+                                    <input type="radio" name="name" id="filterVise">
+                                    <span class="article__form-data">Credit card</span>
+                                </div>
+                                <label for="filterVise">
+                                    <img src="img/visa.png" alt="visa">
+                                </label>
+                            </div>
+                            <div>
+                                <span class="article__form-data">Card number<br></span>
+                                <input class="article__form-input checkout__billing-pay-card-number" type="text"
+                                    name="firstname" value="Card number" onfocus="this.value=''">
+                            </div>
+                            <div class="checkout__billing-pay-card-data">
+                                <div class="checkout__billing-pay-card-data-holder">
+                                    <span class="article__form-data">Card holder<br></span>
+                                    <input class="article__form-input checkout__billing-pay-card-holder" type="text"
+                                        name="Card" value="Card holder" onfocus="this.value=''">
+                                </div>
+                                <div class="checkout__billing-pay-card-data-cvc">
+                                    <span class="article__form-data">Expiration date<br></span>
+                                    <input class="article__form-input checkout__billing-pay-card-cvc" type="text"
+                                        name="date" value="DD/MM/YY" onfocus="this.value=''">
+                                </div>
+                                <div class="checkout__billing-pay-card-data-cvc">
+                                    <span class="article__form-data">CVC<br></span>
+                                    <input class="article__form-input checkout__billing-pay-card-cvc" type="text"
+                                        name="CVC" value="CVC" onfocus="this.value=''">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sort__hero-check checkout__billing-radio checkout__billing-radio-pay">
+                            <div>
+                                <input type="radio" name="name" id="filterPayPay">
+                                <span>FedEx</span>
+                            </div>
+                            <label for="filterPayPay" class="sort__hero-label checkout__billing-method-label">
+                                <img src="img/PayPal.png" alt="fedex">
+                            </label>
+                        </div>
+                        <div class="sort__hero-check checkout__billing-radio">
+                            <div>
+                                <input type="radio" name="name" id="filterBitcoin">
+                                <span>Bitcoin</span>
+                            </div>
+                            <label for="filterBitcoin" class="sort__hero-label checkout__billing-method-label">
+                                <img src="img/bitcoin.png" alt="fedex">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout__billing-category">
+                    <h3 class="checkout__billing-title">Additional informations</h3>
+                    <div class="checkout__billing-number-steps">
+                        <span class="checkout__billing-secondary-title">Need something else? We will make it for
+                            you!</span>
+                        <span class="checkout__billing-step">Step 4 of 5</span>
+                    </div>
+
+                    <span class="article__form-data">Order notes<br></span>
+                    <textarea class="article__form-comment checkout__billing-notes" name="body" cols="30" rows="10"
+                        placeholder="Need a specific delivery day? Sending a gitf? Let’s say ..."></textarea>
+                </div>
+                <div class="checkout__billing-category">
+                    <h3 class="checkout__billing-title">Confirmation</h3>
+                    <div class="checkout__billing-number-steps">
+                        <span class="checkout__billing-secondary-title">We are getting to the end. Just few clicks and
+                            your order si ready!</span>
+                        <span class="checkout__billing-step">Step 5 of 5</span>
+                    </div>
+
+                    <div class="sort__hero-check sort__hero-check-box1">
+                        <input type="checkbox" name="name" id="checkbox1">
+                        <label for="checkbox1" class="sort__hero-label">
+                            <p>I agree with sending an Marketing and newsletter emails. No spam, promissed!</p>
+                        </label>
+                    </div>
+                    <div class="sort__hero-check  sort__hero-check-box2">
+                        <input type="checkbox" name="name" id="checkbox2">
+                        <label for="checkbox2" class="sort__hero-label ">
+                            <p>I agree with our terms and conditions and privacy policy.</p>
+                        </label>
+                    </div>
+
+                    <button class="button--primary button--difault button--checkout__billing">Complete order</button>
+
+                    <div class="shield">
+                        <img src="img/Shield.png" alt="Shield">
+                        <h5 class="shield-title">All your data are safe</h5>
+                        <p class="shield-text">We are using the most advanced <br> security to provide you the best <br>
+                            experience ever.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="checkout__cart">
+                <h2 class="checkout__cart-title">Order Summary</h2>
+                <p class="checkout__cart-text">Price can change depending on shipping method and taxes of your state.
+                </p>
+                <div class="checkout__cart-product">
+                    <div class="checkout__cart-product-img">
+                        <img class="checkout__cart-product-potato" src="img/potato.jpg" alt="potato">
+                        <button class="products__like add-to-cart__like">
+                            <img class="products__like-heart" src="img/heart.png" alt="heart">
+                            Wishlist
+                        </button>
+                        <button class="button--compare">
+                            <img class="compare" src="img/compare.png" alt="icon">
+                            Compare
+                        </button>
+                        <button class="button--compare">
+                            <img class="compare" src="img/ic-actions.png" alt="icon">
+                            Remove
+                        </button>
+                    </div>
+                    <div class="checkout__cart-product-content">
+                        <h4 class="checkout__cart-product-content-title">Product title</h4>
+                        <div class="carrots__info-list checkout__cart-product-content-list">
+                            <ul>
+                                <li class="carrots__info-item">Farm</li>
+                                <li class="carrots__info-item">Freshness:</li>
+                            </ul>
+                            <ul>
+                                <li class="carrots__info-item carrots__info-item-answer">Tharamis Farm</li>
+                                <li class="carrots__info-item carrots__info-item-answer">1 day old</li>
+                            </ul>
+                        </div>
+                        <div class="carrots__info-rating">
+                            <img src="img/actions-star.png" alt="star">
+                            <img src="img/actions-star.png" alt="star">
+                            <img src="img/actions-star.png" alt="star">
+                            <img src="img/actions-star.png" alt="star">
+                            <img src="img/star.png" alt="star">
+                        </div>
+                        <div class="checkout__cart-product-content-price">
+                            <div class="add-to-cart__price">
+                                <span class="add-to-cart__price-new checkout__cart-product-content-price-new">36.23
+                                    USD</span>
+                                <span class="add-to-cart__price-old">48.56</span>
+                            </div>
+                            <div class="add-to-cart-number checkout__cart-product-content-add-to-cart-number">
+                                <select class="add-to-cart-number-select" name="select">
+                                    <option value="1" selected="">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                                <span class="add-to-cart-number-line">|</span>
+                                <span class="add-to-cart-number-span">Pcs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout__cart-product">
+                    <div class="checkout__cart-product-img">
+                        <img class="checkout__cart-product-potato" src="img/beet.jpg" alt="potato">
+                        <button class="products__like add-to-cart__like">
+                            <img class="products__like-heart" src="img/heart.png" alt="heart">
+                            Wishlist
+                        </button>
+                        <button class="button--compare">
+                            <img class="compare" src="img/compare.png" alt="icon">
+                            Compare
+                        </button>
+                        <button class="button--compare">
+                            <img class="compare" src="img/ic-actions.png" alt="icon">
+                            Remove
+                        </button>
+                    </div>
+                    <div class="checkout__cart-product-content">
+                        <h4 class="checkout__cart-product-title">Product title</h4>
+                        <div class="carrots__info-list checkout__cart-product-content-list">
+                            <ul>
+                                <li class="carrots__info-item">Farm</li>
+                                <li class="carrots__info-item">Freshness:</li>
+                            </ul>
+                            <ul>
+                                <li class="carrots__info-item carrots__info-item-answer">Tharamis Farm</li>
+                                <li class="carrots__info-item carrots__info-item-answer">1 day old</li>
+                            </ul>
+                        </div>
+                        <div class="carrots__info-rating">
+                            <img src="img/actions-star.png" alt="star">
+                            <img src="img/actions-star.png" alt="star">
+                            <img src="img/actions-star.png" alt="star">
+                            <img src="img/actions-star.png" alt="star">
+                            <img src="img/star.png" alt="star">
+                        </div>
+                        <div class="checkout__cart-product-content-price">
+                            <div class="add-to-cart__price">
+                                <span class="add-to-cart__price-new checkout__cart-product-content-price-new">36.23
+                                    USD</span>
+                                <span class="add-to-cart__price-old">48.56</span>
+                            </div>
+                            <div class="add-to-cart-number checkout__cart-product-content-add-to-cart-number">
+                                <select class="add-to-cart-number-select" name="select">
+                                    <option value="1" selected="">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                                <span class="add-to-cart-number-line">|</span>
+                                <span class="add-to-cart-number-span">Pcs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout__cart-product">
+                    <div class="checkout__cart-product-img">
+                        <img class="checkout__cart-product-potato" src="img/shrimps.jpg" alt="potato">
+                        <button class="products__like add-to-cart__like">
+                            <img class="products__like-heart" src="img/heart.png" alt="heart">
+                            Wishlist
+                        </button>
+                        <button class="button--compare">
+                            <img class="compare" src="img/compare.png" alt="icon">
+                            Compare
+                        </button>
+                        <button class="button--compare">
+                            <img class="compare" src="img/ic-actions.png" alt="icon">
+                            Remove
+                        </button>
+                    </div>
+                    <div class="checkout__cart-product-content">
+                        <h4 class="checkout__cart-product-title">Product title</h4>
+                        <div class="carrots__info-list checkout__cart-product-content-list">
+                            <ul>
+                                <li class="carrots__info-item">Farm</li>
+                                <li class="carrots__info-item">Freshness:</li>
+                            </ul>
+                            <ul>
+                                <li class="carrots__info-item carrots__info-item-answer">Tharamis Farm</li>
+                                <li class="carrots__info-item carrots__info-item-answer">1 day old</li>
+                            </ul>
+                        </div>
+                        <div class="carrots__info-rating">
+                            <img src="img/actions-star.png" alt="star">
+                            <img src="img/actions-star.png" alt="star">
+                            <img src="img/actions-star.png" alt="star">
+                            <img src="img/actions-star.png" alt="star">
+                            <img src="img/star.png" alt="star">
+                        </div>
+                        <div class="checkout__cart-product-content-price">
+                            <div class="add-to-cart__price">
+                                <span class="add-to-cart__price-new checkout__cart-product-content-price-new">36.23
+                                    USD</span>
+                                <span class="add-to-cart__price-old">48.56</span>
+                            </div>
+                            <div class="add-to-cart-number checkout__cart-product-content-add-to-cart-number">
+                                <select class="add-to-cart-number-select" name="select">
+                                    <option value="1" selected="">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                                <span class="add-to-cart-number-line">|</span>
+                                <span class="add-to-cart-number-span">Pcs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout__cart-product">
+                    <div class="checkout__cart-product-img">
+                        <img class="checkout__cart-product-potato" src="img/fish.jpg" alt="potato">
+                        <button class="products__like add-to-cart__like">
+                            <img class="products__like-heart" src="img/heart.png" alt="heart">
+                            Wishlist
+                        </button>
+                        <button class="button--compare">
+                            <img class="compare" src="img/compare.png" alt="icon">
+                            Compare
+                        </button>
+                        <button class="button--compare">
+                            <img class="compare" src="img/ic-actions.png" alt="icon">
+                            Remove
+                        </button>
+                    </div>
+                    <div class="checkout__cart-product-content">
+                        <h4 class="checkout__cart-product-title">Product title</h4>
+                        <div class="carrots__info-list checkout__cart-product-content-list">
+                            <ul>
+                                <li class="carrots__info-item">Farm</li>
+                                <li class="carrots__info-item">Freshness:</li>
+                            </ul>
+                            <ul>
+                                <li class="carrots__info-item carrots__info-item-answer">Tharamis Farm</li>
+                                <li class="carrots__info-item carrots__info-item-answer">1 day old</li>
+                            </ul>
+                        </div>
+                        <div class="carrots__info-rating">
+                            <img src="img/actions-star.png" alt="star">
+                            <img src="img/actions-star.png" alt="star">
+                            <img src="img/actions-star.png" alt="star">
+                            <img src="img/actions-star.png" alt="star">
+                            <img src="img/star.png" alt="star">
+                        </div>
+                        <div class="checkout__cart-product-content-price">
+                            <div class="add-to-cart__price">
+                                <span class="add-to-cart__price-new checkout__cart-product-content-price-new">36.23
+                                    USD</span>
+                                <span class="add-to-cart__price-old">48.56</span>
+                            </div>
+                            <div class="add-to-cart-number checkout__cart-product-content-add-to-cart-number">
+                                <select class="add-to-cart-number-select" name="select">
+                                    <option value="1" selected="">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                                <span class="add-to-cart-number-line">|</span>
+                                <span class="add-to-cart-number-span">Pcs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkout__cart-payment">
+                    <div class="checkout__cart-check">
+                        <ul>
+                            <li class="checkout__cart-check-item">Subtotal</li>
+                            <li class="checkout__cart-check-item">Tax</li>
+                            <li class="checkout__cart-check-item">Shipping</li>
+                        </ul>
+                        <ul>
+                            <li class="checkout__cart-check-item">73.98 USD</li>
+                            <li class="checkout__cart-check-item">17% 16.53 USD</li>
+                            <li class="checkout__cart-check-item">0 USD</li>
+                        </ul>
+                    </div>
+                    <div class="checkout__billin checkout__cart-apply">
+                        <input class="article__form-input checkout__cart-input" type="text" name="date"
+                            value="Apply promo code" onfocus="this.value=''">
+                        <button class="button button--apply">Apply now</button>
+                    </div>
+                </div>
+                <div class="checkout__cart-all-sum">
+                    <p class="checkout__cart-order">Total Order<br><span class="checkout__cart-day">Guaranteed delivery
+                            day: June 12, 2020</span></p>
+                    <span class="checkout__cart-price">89.84 USD</span>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <span class="footer__copyright">Copyright © 2020 petrbilek.com</span>
+        </div>
+    </footer>
+</body>
+
+</html>

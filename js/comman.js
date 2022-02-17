@@ -46,7 +46,25 @@ const swiper = new Swiper('.swiper', {
     slidesPerView: 2.8,
     centeredSlides: true, 
     freeMode: true,
-    
+    breakpoints: {
+        800: {
+            slidesPerGroup: 1,
+            spaceBetween: 32,
+            slidesPerView: 3,
+            centeredSlides: true,
+            freeMode: true,
+        },
+        600: {
+            slidesPerGroup: 1,
+            slidesPerView: 2,
+            centeredSlides: true,
+            freeMode: true,
+        },
+        320: {
+            slidesPerGroup: 1,
+            slidesPerView: 1,
+        }
+    }
     // slidesPerView: 2.8,
     // slidesPerGroup: 1,
 });

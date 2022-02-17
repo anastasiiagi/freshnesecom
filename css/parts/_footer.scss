@@ -4,12 +4,16 @@
         @include dfcc;
         align-items: flex-start;
         margin-bottom: 48px;
+        @media (max-width: 600px) {
+            flex-wrap: wrap;
+        }
     }
 
     &__nav {
         margin-bottom: 0;
-        &:last-child {
-            margin-bottom: 0;
+        @media (max-width: 600px) {
+            width: 50%;
+            text-align: center;
         }
     }
 
